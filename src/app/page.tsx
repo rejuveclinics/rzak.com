@@ -146,7 +146,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
                 <Link
                   href="/contact"
-                  className="bg-secondary-container text-on-secondary-container px-8 py-4 font-bold text-lg hover:opacity-90 transition-all flex items-center gap-2"
+                  className="btn-primary px-8 py-4 text-lg flex items-center gap-2"
                 >
                   Contact Us
                   <span className="material-symbols-outlined">
@@ -169,7 +169,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8 grid grid-cols-12 gap-12 items-start">
           <div className="col-span-12 md:col-span-5">
             <FadeIn>
-              <h2 className="text-headline-lg text-primary sticky top-32">
+              <h2 className="text-headline-lg text-primary sticky top-32 font-display">
                 The invisible erosion of high-stakes capital.
               </h2>
             </FadeIn>
@@ -223,13 +223,13 @@ export default function Home() {
                 <span className="text-label-md text-secondary block mb-4">
                   Core Capabilities
                 </span>
-                <h2 className="text-headline-lg text-primary">
+                <h2 className="text-headline-lg text-primary font-display">
                   Strategic Financial Infrastructure
                 </h2>
               </div>
               <Link
                 href="/what-we-do"
-                className="text-primary font-bold hover:underline underline-offset-8 transition-all flex items-center gap-2 mb-2"
+                className="text-primary font-bold link-underline underline-offset-8 transition-all flex items-center gap-2 mb-2"
               >
                 Learn more
                 <span className="material-symbols-outlined">east</span>
@@ -268,7 +268,7 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-12">
             <div className="col-span-12 lg:col-span-4">
               <FadeIn>
-                <h2 className="text-headline-lg mb-8">
+                <h2 className="text-headline-lg mb-8 font-display">
                   Architecting and running your ecosystem.
                 </h2>
                 <p className="text-on-primary-container text-lg mb-12">
@@ -277,7 +277,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/how-we-work"
-                  className="inline-flex items-center gap-3 text-secondary-fixed font-bold hover:gap-5 transition-all"
+                  className="inline-flex items-center gap-3 text-secondary-fixed font-bold link-underline hover:gap-5 transition-all"
                 >
                   How we work
                   <span className="material-symbols-outlined">
@@ -319,12 +319,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8">
           <FadeIn>
             <div className="flex justify-between items-center mb-16">
-              <h2 className="text-headline-lg text-primary">
+              <h2 className="text-headline-lg text-primary font-display">
                 Critical Insights
               </h2>
               <Link
                 href="/insights"
-                className="text-primary font-bold hover:underline underline-offset-8 transition-all"
+                className="text-primary font-bold link-underline underline-offset-8 transition-all"
               >
                 View all insights
               </Link>
@@ -336,7 +336,7 @@ export default function Home() {
             stagger={0.15}
           >
             {insights.map((item) => (
-              <div key={item.title} className="group cursor-pointer">
+              <div key={item.title} className="group cursor-pointer card-lift">
                 <div className="h-64 overflow-hidden mb-6 bg-surface-dim relative">
                   <Image
                     src={item.img}
@@ -377,7 +377,7 @@ export default function Home() {
           <FadeIn delay={0.3}>
             <Link
               href="/contact"
-              className="bg-secondary text-on-secondary px-12 py-5 font-bold text-xl hover:opacity-90 transition-all flex items-center gap-3"
+              className="btn-accent px-12 py-5 text-xl flex items-center gap-3"
             >
               Get in touch
               <span className="material-symbols-outlined">mail</span>
