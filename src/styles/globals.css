@@ -30,12 +30,12 @@
     vertical-align: middle;
   }
 
-  /* Typography — Display uses Instrument Serif */
+  /* Typography — Display uses Alegreya Sans */
   .text-display-lg {
-    @apply font-display text-[3.5rem] md:text-[4.5rem] leading-[1.05] tracking-[-0.03em];
+    @apply font-display text-[3.5rem] md:text-[4.5rem] leading-[1.05] tracking-[-0.02em] font-bold;
   }
   .text-display-md {
-    @apply font-display text-[2.5rem] md:text-[3.5rem] leading-[1.08] tracking-[-0.02em];
+    @apply font-display text-[2.5rem] md:text-[3.5rem] leading-[1.08] tracking-[-0.02em] font-medium;
   }
   .text-headline-lg {
     @apply text-[2rem] leading-[1.2] tracking-[-0.02em] font-semibold;
