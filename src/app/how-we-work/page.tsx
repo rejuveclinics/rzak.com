@@ -146,7 +146,7 @@ export default function HowWeWorkPage() {
             {phases.map((phase, i) => (
               <div
                 key={phase.num}
-                className={`bg-primary-container p-12 group card-lift hover:bg-zinc-900 transition-all duration-500${
+                className={`bg-primary-container p-12 rounded-xl group card-lift hover:bg-zinc-900 transition-all duration-500${
                   i < phases.length - 1
                     ? " border-r border-zinc-800"
                     : ""
@@ -190,7 +190,7 @@ export default function HowWeWorkPage() {
       {/* ---------------------------------------------------------- */}
       <section className="max-w-7xl mx-auto px-8 py-32">
         <FadeIn>
-          <div className="bg-surface-container-low p-16 relative overflow-hidden">
+          <div className="bg-surface-container-low p-16 rounded-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 p-12 opacity-10">
               <span className="material-symbols-outlined text-[120px]">
                 format_quote
@@ -229,7 +229,7 @@ export default function HowWeWorkPage() {
                 {resultsItems.map((item) => (
                   <div
                     key={item.title}
-                    className={`border-l-4 pl-8 py-4 transition-colors${
+                    className={`border-l-4 pl-8 py-4 rounded-lg transition-colors${
                       item.highlight
                         ? " border-secondary-container bg-surface-container-low"
                         : " border-surface-container-high hover:border-secondary"

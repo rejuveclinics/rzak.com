@@ -74,7 +74,7 @@ export default function ContactPage() {
             </FadeIn>
 
             <FadeIn delay={0.4}>
-              <div className="p-8 bg-surface-container-low rounded-lg border-l-4 border-secondary max-w-md">
+              <div className="p-8 bg-surface-container-low rounded-xl border-l-4 border-secondary max-w-md">
                 <div className="flex items-start gap-4">
                   <span
                     className="material-symbols-outlined text-secondary mt-1"
@@ -101,7 +101,7 @@ export default function ContactPage() {
         {/* Right column — form */}
         <div className="col-span-12 md:col-span-5 flex flex-col justify-center">
           <FadeIn delay={0.3} direction="right">
-            <div className="bg-surface-container-lowest p-10 shadow-ambient-lg rounded-lg">
+            <div className="bg-surface-container-lowest p-10 shadow-ambient-lg rounded-xl">
               <form className="space-y-8">
                 <div className="relative">
                   <label

@@ -86,7 +86,7 @@ export default function InsightsPage() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Insight 1: Large Feature (7-col) */}
           <FadeIn className="md:col-span-7">
-            <article className="bg-surface-container-low group cursor-pointer h-full card-lift">
+            <article className="bg-surface-container-low rounded-xl group cursor-pointer h-full card-lift">
               <div className="p-12 h-full flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-start mb-8">
@@ -118,7 +118,7 @@ export default function InsightsPage() {
 
           {/* Insight 2: Dark card (5-col) */}
           <FadeIn className="md:col-span-5" delay={0.1}>
-            <article className="bg-primary text-on-primary group cursor-pointer h-full card-lift">
+            <article className="bg-primary text-on-primary rounded-xl group cursor-pointer h-full card-lift">
               <div className="p-12 h-full flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-start mb-12">
@@ -151,7 +151,7 @@ export default function InsightsPage() {
 
           {/* Insight 3: 4-col with green left border */}
           <FadeIn className="md:col-span-4" delay={0.15}>
-            <article className="bg-surface-container-high group cursor-pointer border-l-4 border-secondary h-full card-lift">
+            <article className="bg-surface-container-high rounded-xl group cursor-pointer border-l-4 border-secondary h-full card-lift">
               <div className="p-10">
                 <div className="mb-6 text-label-md opacity-40">Insight 03</div>
                 <h2 className="text-xl font-bold font-display tracking-[-0.02em] mb-4">
@@ -170,7 +170,7 @@ export default function InsightsPage() {
 
           {/* Insight 4: 4-col with progress bar */}
           <FadeIn className="md:col-span-4" delay={0.2}>
-            <article className="bg-surface-container-low group cursor-pointer h-full card-lift">
+            <article className="bg-surface-container-low rounded-xl group cursor-pointer h-full card-lift">
               <div className="p-10 h-full flex flex-col">
                 <div className="mb-6 text-label-md opacity-40">Insight 04</div>
                 <h2 className="text-xl font-bold font-display tracking-[-0.02em] mb-4">
@@ -189,7 +189,7 @@ export default function InsightsPage() {
 
           {/* Insight 5: 4-col with background icon */}
           <FadeIn className="md:col-span-4" delay={0.25}>
-            <article className="bg-surface-container-high group cursor-pointer relative overflow-hidden h-full card-lift">
+            <article className="bg-surface-container-high rounded-xl group cursor-pointer relative overflow-hidden h-full card-lift">
               <div className="absolute right-[-20%] bottom-[-10%] opacity-5 scale-150">
                 <span className="material-symbols-outlined text-[12rem]">
                   account_tree
@@ -218,7 +218,7 @@ export default function InsightsPage() {
       {/* ---------------------------------------------------------- */}
       <section className="max-w-[1440px] mx-auto px-12">
         <FadeIn>
-          <div className="p-16 bg-primary-container text-on-primary">
+          <div className="p-16 bg-primary-container text-on-primary rounded-xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-bold font-display tracking-[-0.02em] mb-4">

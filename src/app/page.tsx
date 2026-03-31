@@ -127,10 +127,13 @@ export default function Home() {
               delay={0.2}
             >
               <span className="reveal-line block">
-                Most money isn&rsquo;t lost in big decisions.
+                Most money isn&apos;t lost
               </span>
               <span className="reveal-line block">
-                It&rsquo;s lost in the details no one is watching.
+                in big decisions. It&apos;s lost in
+              </span>
+              <span className="reveal-line block">
+                the details no one is watching.
               </span>
             </TextReveal>
 
@@ -238,23 +241,53 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn stagger={0.1}>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-0 border-t border-outline-variant/20">
-              {capabilities.map((cap, i) => (
-                <div
-                  key={cap.title}
-                  className={`py-12 pr-8 group hover:bg-surface-container-low transition-colors px-4${
-                    i === 0 ? " -ml-4" : ""
-                  }${i < 4 ? " border-b md:border-b-0 border-outline-variant/20" : ""}`}
-                >
-                  <span className="material-symbols-outlined text-secondary text-3xl mb-6">
-                    {cap.icon}
-                  </span>
-                  <h3 className="text-title-md mb-4">{cap.title}</h3>
-                  <p className="text-on-surface-variant text-sm leading-relaxed">
-                    {cap.desc}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+              {/* Oversight — large card */}
+              <div className="md:col-span-7 bg-surface-container-low p-12 rounded-xl card-lift group">
+                <span className="material-symbols-outlined text-secondary text-3xl mb-8 block">visibility</span>
+                <h3 className="text-2xl font-bold tracking-tight mb-4 font-display">Oversight</h3>
+                <p className="text-on-surface-variant leading-relaxed max-w-xl">
+                  We track where money is actually going, identifying hidden costs and patterns across your entire financial landscape.
+                </p>
+              </div>
+              {/* Control — dark card */}
+              <div className="md:col-span-5 bg-primary-container p-12 rounded-xl text-on-primary card-lift">
+                <span className="material-symbols-outlined text-secondary-container text-3xl mb-8 block">settings_input_component</span>
+                <h3 className="text-2xl font-bold tracking-tight mb-4 font-display">Control</h3>
+                <p className="text-on-primary-container leading-relaxed">
+                  We implement structure so spending is intentional and aligned with objectives.
+                </p>
+              </div>
+              {/* Execution */}
+              <div className="md:col-span-4 bg-surface-container p-10 rounded-xl card-lift">
+                <div className="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-primary">bolt</span>
+                </div>
+                <h3 className="text-xl font-bold tracking-tight mb-3 font-display">Execution</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">
+                  We manage the day-to-day operations so nothing slips through the cracks.
+                </p>
+              </div>
+              {/* Protection */}
+              <div className="md:col-span-4 bg-surface-container p-10 rounded-xl card-lift">
+                <div className="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-primary">shield</span>
+                </div>
+                <h3 className="text-xl font-bold tracking-tight mb-3 font-display">Protection</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">
+                  We review contracts and prevent costly mistakes before they are finalized.
+                </p>
+              </div>
+              {/* Growth — accent card */}
+              <div className="md:col-span-4 bg-secondary p-10 rounded-xl text-on-secondary card-lift relative overflow-hidden">
+                <div className="relative z-10">
+                  <span className="material-symbols-outlined text-3xl mb-8 block opacity-90">trending_up</span>
+                  <h3 className="text-xl font-bold tracking-tight mb-3 font-display">Growth</h3>
+                  <p className="text-on-secondary/80 text-sm leading-relaxed">
+                    We identify opportunities to save, optimize, and generate more revenue.
                   </p>
                 </div>
-              ))}
+              </div>
             </div>
           </FadeIn>
         </div>
@@ -294,7 +327,7 @@ export default function Home() {
               {phases.map((phase) => (
                 <div
                   key={phase.num}
-                  className="bg-primary p-10 relative overflow-hidden"
+                  className="bg-primary p-10 rounded-xl relative overflow-hidden"
                 >
                   <span className="text-6xl font-black text-white/5 absolute -top-4 -right-4">
                     {phase.num}
@@ -331,29 +364,52 @@ export default function Home() {
             </div>
           </FadeIn>
 
-          <FadeIn
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
-            stagger={0.15}
-          >
-            {insights.map((item) => (
-              <div key={item.title} className="group cursor-pointer card-lift">
-                <div className="h-64 overflow-hidden mb-6 bg-surface-dim relative">
+          <FadeIn stagger={0.12}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+              {/* Featured insight */}
+              <div className="md:col-span-7 bg-surface-container-low rounded-xl group cursor-pointer card-lift">
+                <div className="h-72 overflow-hidden relative">
                   <Image
-                    src={item.img}
-                    alt={item.alt}
+                    src={insights[0].img}
+                    alt={insights[0].alt}
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 58vw"
+                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   />
                 </div>
-                <h3 className="text-title-md group-hover:text-secondary transition-colors leading-tight">
-                  {item.title}
-                </h3>
-                <p className="mt-4 text-on-surface-variant text-sm">
-                  {item.desc}
-                </p>
+                <div className="p-10">
+                  <span className="text-label-md text-on-surface-variant/50 block mb-3">Insight 01</span>
+                  <h3 className="text-2xl font-bold tracking-tight group-hover:text-secondary transition-colors font-display mb-3">
+                    {insights[0].title}
+                  </h3>
+                  <p className="text-on-surface-variant leading-relaxed">{insights[0].desc}</p>
+                </div>
               </div>
-            ))}
+              {/* Dark insight */}
+              <div className="md:col-span-5 bg-primary text-on-primary rounded-xl group cursor-pointer card-lift flex flex-col justify-between p-10">
+                <div>
+                  <span className="text-label-md text-on-primary-container block mb-8">Insight 02</span>
+                  <h3 className="text-2xl font-bold tracking-tight group-hover:text-secondary-fixed transition-colors font-display mb-4">
+                    {insights[1].title}
+                  </h3>
+                  <p className="text-on-primary-container leading-relaxed">{insights[1].desc}</p>
+                </div>
+                <div className="mt-10 pt-6 border-t border-white/10">
+                  <span className="text-secondary-fixed font-bold text-sm uppercase tracking-widest">Read Report</span>
+                </div>
+              </div>
+              {/* Third insight — accent border */}
+              <div className="md:col-span-12 bg-surface-container-high border-l-4 border-secondary rounded-xl p-10 group cursor-pointer card-lift flex items-center gap-12">
+                <div className="flex-1">
+                  <span className="text-label-md text-on-surface-variant/50 block mb-3">Insight 03</span>
+                  <h3 className="text-xl font-bold tracking-tight group-hover:text-secondary transition-colors font-display mb-2">
+                    {insights[2].title}
+                  </h3>
+                  <p className="text-on-surface-variant text-sm">{insights[2].desc}</p>
+                </div>
+                <span className="material-symbols-outlined text-secondary text-2xl hidden md:block">arrow_forward</span>
+              </div>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -361,7 +417,7 @@ export default function Home() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 6 : CONTACT CTA                                      */}
       {/* ---------------------------------------------------------- */}
-      <section className="py-32 bg-primary">
+      <section className="py-32 bg-primary rounded-xl">
         <div className="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
           <FadeIn>
             <h2 className="text-display-lg text-on-primary mb-8 max-w-4xl">

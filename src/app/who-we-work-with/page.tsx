@@ -64,7 +64,7 @@ export default function WhoWeWorkWithPage() {
       <section className="max-w-7xl mx-auto px-8 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Category 1: Founders — 7 col */}
-          <FadeIn className="md:col-span-7 bg-surface-container-low p-12 flex flex-col justify-between group card-lift overflow-hidden relative">
+          <FadeIn className="md:col-span-7 bg-surface-container-low p-12 rounded-xl flex flex-col justify-between group card-lift overflow-hidden relative">
             <div className="relative z-10">
               <span className="material-symbols-outlined text-secondary mb-6 text-3xl">
                 account_balance
@@ -99,7 +99,7 @@ export default function WhoWeWorkWithPage() {
 
           {/* Category 2: Public Figures — 5 col dark */}
           <FadeIn
-            className="md:col-span-5 bg-primary p-12 text-on-primary flex flex-col justify-between card-lift"
+            className="md:col-span-5 bg-primary p-12 rounded-xl text-on-primary flex flex-col justify-between card-lift"
             delay={0.1}
           >
             <div>
@@ -124,7 +124,7 @@ export default function WhoWeWorkWithPage() {
 
           {/* Category 3: Operators — 5 col */}
           <FadeIn
-            className="md:col-span-5 bg-surface-container p-12 flex flex-col justify-between card-lift"
+            className="md:col-span-5 bg-surface-container p-12 rounded-xl flex flex-col justify-between card-lift"
             delay={0.15}
           >
             <div>
@@ -150,7 +150,7 @@ export default function WhoWeWorkWithPage() {
 
           {/* Category 4: High-Income Individuals — 7 col with image */}
           <FadeIn
-            className="md:col-span-7 bg-surface-container-high p-12 flex flex-col md:flex-row gap-8 items-center card-lift"
+            className="md:col-span-7 bg-surface-container-high p-12 rounded-xl flex flex-col md:flex-row gap-8 items-center card-lift"
             delay={0.2}
           >
             <div className="flex-1">
