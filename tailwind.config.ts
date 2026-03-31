@@ -80,7 +80,7 @@ const config: Config = {
         background: "#fcf9f5",
       },
       fontFamily: {
-        display: ["var(--font-display)", "Georgia", "serif"],
+        display: ["var(--font-display)", "sans-serif"],
         headline: ["var(--font-inter)", "sans-serif"],
         body: ["var(--font-inter)", "sans-serif"],
         label: ["var(--font-inter)", "sans-serif"],
