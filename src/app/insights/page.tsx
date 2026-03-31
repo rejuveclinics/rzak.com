@@ -86,7 +86,7 @@ export default function InsightsPage() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Insight 1: Large Feature (7-col) */}
           <FadeIn className="md:col-span-7">
-            <article className="bg-surface-container-low group cursor-pointer h-full">
+            <article className="bg-surface-container-low group cursor-pointer h-full card-lift">
               <div className="p-12 h-full flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-start mb-8">
@@ -95,7 +95,7 @@ export default function InsightsPage() {
                       north_east
                     </span>
                   </div>
-                  <h2 className="text-3xl font-bold tracking-[-0.02em] mb-6 group-hover:text-secondary transition-colors">
+                  <h2 className="text-3xl font-bold font-display tracking-[-0.02em] mb-6 group-hover:text-secondary transition-colors">
                     Where Money Actually Gets Lost
                   </h2>
                   <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
@@ -118,7 +118,7 @@ export default function InsightsPage() {
 
           {/* Insight 2: Dark card (5-col) */}
           <FadeIn className="md:col-span-5" delay={0.1}>
-            <article className="bg-primary text-on-primary group cursor-pointer h-full">
+            <article className="bg-primary text-on-primary group cursor-pointer h-full card-lift">
               <div className="p-12 h-full flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-start mb-12">
@@ -129,7 +129,7 @@ export default function InsightsPage() {
                       lock
                     </span>
                   </div>
-                  <h2 className="text-2xl font-bold tracking-[-0.02em] mb-6">
+                  <h2 className="text-2xl font-bold font-display tracking-[-0.02em] mb-6">
                     Why Vendor Oversight Matters
                   </h2>
                   <p className="text-on-primary-container leading-relaxed">
@@ -138,7 +138,7 @@ export default function InsightsPage() {
                   </p>
                 </div>
                 <div className="mt-12 pt-8 border-t border-primary-container">
-                  <button className="flex items-center text-secondary-fixed font-bold text-sm uppercase tracking-widest">
+                  <button className="flex items-center text-secondary-fixed font-bold text-sm uppercase tracking-widest link-underline">
                     Read Report
                     <span className="material-symbols-outlined ml-2 text-xs">
                       arrow_forward
@@ -151,17 +151,17 @@ export default function InsightsPage() {
 
           {/* Insight 3: 4-col with green left border */}
           <FadeIn className="md:col-span-4" delay={0.15}>
-            <article className="bg-surface-container-high group cursor-pointer border-l-4 border-secondary h-full">
+            <article className="bg-surface-container-high group cursor-pointer border-l-4 border-secondary h-full card-lift">
               <div className="p-10">
                 <div className="mb-6 text-label-md opacity-40">Insight 03</div>
-                <h2 className="text-xl font-bold tracking-[-0.02em] mb-4">
+                <h2 className="text-xl font-bold font-display tracking-[-0.02em] mb-4">
                   The Cost of Not Reviewing Contracts
                 </h2>
                 <p className="text-on-surface-variant mb-6 text-sm">
                   &lsquo;Most contracts don&rsquo;t fail in obvious ways. They
                   fail in the details.&rsquo;
                 </p>
-                <div className="flex items-center text-secondary font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">
+                <div className="flex items-center text-secondary font-bold text-xs uppercase tracking-widest link-underline group-hover:translate-x-2 transition-transform">
                   Explore Methodology
                 </div>
               </div>
@@ -170,10 +170,10 @@ export default function InsightsPage() {
 
           {/* Insight 4: 4-col with progress bar */}
           <FadeIn className="md:col-span-4" delay={0.2}>
-            <article className="bg-surface-container-low group cursor-pointer h-full">
+            <article className="bg-surface-container-low group cursor-pointer h-full card-lift">
               <div className="p-10 h-full flex flex-col">
                 <div className="mb-6 text-label-md opacity-40">Insight 04</div>
-                <h2 className="text-xl font-bold tracking-[-0.02em] mb-4">
+                <h2 className="text-xl font-bold font-display tracking-[-0.02em] mb-4">
                   Spending Isn&rsquo;t the Problem
                 </h2>
                 <p className="text-on-surface-variant mb-8 text-sm flex-grow">
@@ -189,7 +189,7 @@ export default function InsightsPage() {
 
           {/* Insight 5: 4-col with background icon */}
           <FadeIn className="md:col-span-4" delay={0.25}>
-            <article className="bg-surface-container-high group cursor-pointer relative overflow-hidden h-full">
+            <article className="bg-surface-container-high group cursor-pointer relative overflow-hidden h-full card-lift">
               <div className="absolute right-[-20%] bottom-[-10%] opacity-5 scale-150">
                 <span className="material-symbols-outlined text-[12rem]">
                   account_tree
@@ -197,14 +197,14 @@ export default function InsightsPage() {
               </div>
               <div className="p-10 relative z-10">
                 <div className="mb-6 text-label-md opacity-40">Insight 05</div>
-                <h2 className="text-xl font-bold tracking-[-0.02em] mb-4">
+                <h2 className="text-xl font-bold font-display tracking-[-0.02em] mb-4">
                   Why Financial Systems Break at Scale
                 </h2>
                 <p className="text-on-surface-variant mb-6 text-sm">
                   &lsquo;What works at one level doesn&rsquo;t work at the
                   next.&rsquo;
                 </p>
-                <div className="flex items-center text-primary font-bold text-xs uppercase tracking-widest underline underline-offset-4 decoration-2 decoration-secondary">
+                <div className="flex items-center text-primary font-bold text-xs uppercase tracking-widest link-underline">
                   View System Audit
                 </div>
               </div>
@@ -221,7 +221,7 @@ export default function InsightsPage() {
           <div className="p-16 bg-primary-container text-on-primary">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl font-bold tracking-[-0.02em] mb-4">
+                <h3 className="text-2xl font-bold font-display tracking-[-0.02em] mb-4">
                   Request Discrete Analysis
                 </h3>
                 <p className="text-on-primary-container max-w-md">
@@ -235,7 +235,7 @@ export default function InsightsPage() {
                   placeholder="Professional Email"
                   className="bg-primary text-on-primary border-none border-b-2 border-outline focus:border-secondary focus:ring-0 px-4 py-3 flex-grow"
                 />
-                <button className="bg-secondary text-on-secondary px-8 py-3 font-bold hover:bg-secondary/90 transition-colors">
+                <button className="btn-primary px-8 py-3 font-bold">
                   Submit Request
                 </button>
               </div>

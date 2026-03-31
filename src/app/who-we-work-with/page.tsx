@@ -42,7 +42,7 @@ export default function WhoWeWorkWithPage() {
             </FadeIn>
             <TextReveal
               as={"h1" as unknown as React.ElementType}
-              className="text-[3.5rem] leading-[1.1] font-bold tracking-[-0.04em] text-primary mb-8"
+              className="text-[3.5rem] leading-[1.1] font-bold font-display tracking-[-0.04em] text-primary mb-8"
               delay={0.1}
             >
               <span className="reveal-line block">Who We Work With</span>
@@ -64,12 +64,12 @@ export default function WhoWeWorkWithPage() {
       <section className="max-w-7xl mx-auto px-8 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Category 1: Founders — 7 col */}
-          <FadeIn className="md:col-span-7 bg-surface-container-low p-12 flex flex-col justify-between group overflow-hidden relative">
+          <FadeIn className="md:col-span-7 bg-surface-container-low p-12 flex flex-col justify-between group card-lift overflow-hidden relative">
             <div className="relative z-10">
               <span className="material-symbols-outlined text-secondary mb-6 text-3xl">
                 account_balance
               </span>
-              <h3 className="text-2xl font-semibold tracking-tight mb-4">
+              <h3 className="text-2xl font-semibold font-display tracking-tight mb-4">
                 Founders managing multiple entities
               </h3>
               <p className="text-on-surface-variant leading-relaxed max-w-md">
@@ -79,7 +79,7 @@ export default function WhoWeWorkWithPage() {
               </p>
             </div>
             <div className="mt-12 relative z-10">
-              <button className="flex items-center text-primary font-bold text-sm uppercase tracking-wider group-hover:text-secondary transition-colors">
+              <button className="flex items-center text-primary font-bold text-sm uppercase tracking-wider link-underline group-hover:text-secondary transition-colors">
                 Case Study{" "}
                 <span className="material-symbols-outlined ml-2 text-sm">
                   arrow_forward
@@ -99,14 +99,14 @@ export default function WhoWeWorkWithPage() {
 
           {/* Category 2: Public Figures — 5 col dark */}
           <FadeIn
-            className="md:col-span-5 bg-primary p-12 text-on-primary flex flex-col justify-between"
+            className="md:col-span-5 bg-primary p-12 text-on-primary flex flex-col justify-between card-lift"
             delay={0.1}
           >
             <div>
               <span className="material-symbols-outlined text-secondary-fixed mb-6 text-3xl">
                 visibility
               </span>
-              <h3 className="text-2xl font-semibold tracking-tight mb-4">
+              <h3 className="text-2xl font-semibold font-display tracking-tight mb-4">
                 Public figures with complex financial lives
               </h3>
               <p className="text-primary-fixed-dim leading-relaxed">
@@ -116,7 +116,7 @@ export default function WhoWeWorkWithPage() {
               </p>
             </div>
             <div className="mt-12">
-              <button className="bg-secondary-container text-on-secondary-container px-6 py-3 font-bold text-xs uppercase tracking-widest hover:opacity-90 transition-all">
+              <button className="btn-accent px-6 py-3 font-bold text-xs uppercase tracking-widest">
                 Inquire Privately
               </button>
             </div>
@@ -124,14 +124,14 @@ export default function WhoWeWorkWithPage() {
 
           {/* Category 3: Operators — 5 col */}
           <FadeIn
-            className="md:col-span-5 bg-surface-container p-12 flex flex-col justify-between"
+            className="md:col-span-5 bg-surface-container p-12 flex flex-col justify-between card-lift"
             delay={0.15}
           >
             <div>
               <span className="material-symbols-outlined text-secondary mb-6 text-3xl">
                 analytics
               </span>
-              <h3 className="text-2xl font-semibold tracking-tight mb-4">
+              <h3 className="text-2xl font-semibold font-display tracking-tight mb-4">
                 Operators handling high-volume spend
               </h3>
               <p className="text-on-surface-variant leading-relaxed">
@@ -150,14 +150,14 @@ export default function WhoWeWorkWithPage() {
 
           {/* Category 4: High-Income Individuals — 7 col with image */}
           <FadeIn
-            className="md:col-span-7 bg-surface-container-high p-12 flex flex-col md:flex-row gap-8 items-center"
+            className="md:col-span-7 bg-surface-container-high p-12 flex flex-col md:flex-row gap-8 items-center card-lift"
             delay={0.2}
           >
             <div className="flex-1">
               <span className="material-symbols-outlined text-secondary mb-6 text-3xl">
                 monitoring
               </span>
-              <h3 className="text-2xl font-semibold tracking-tight mb-4">
+              <h3 className="text-2xl font-semibold font-display tracking-tight mb-4">
                 High-income individuals without real oversight
               </h3>
               <p className="text-on-surface-variant leading-relaxed">
@@ -166,7 +166,7 @@ export default function WhoWeWorkWithPage() {
                 you&rsquo;ve built, providing the institutional-grade reporting
                 you lack.
               </p>
-              <button className="mt-8 text-secondary font-bold text-sm underline underline-offset-8">
+              <button className="mt-8 text-secondary font-bold text-sm link-underline">
                 View Our Audit Process
               </button>
             </div>
@@ -214,7 +214,7 @@ export default function WhoWeWorkWithPage() {
         <FadeIn>
           <div className="flex flex-col md:flex-row items-end justify-between border-t border-surface-container-highest pt-12">
             <div className="max-w-xl">
-              <h2 className="text-4xl font-bold text-primary tracking-tighter mb-6 leading-tight">
+              <h2 className="text-4xl font-bold font-display text-primary tracking-tighter mb-6 leading-tight">
                 We are the backbone for the modern sovereign.
               </h2>
               <p className="text-lg text-on-surface-variant">
@@ -225,7 +225,7 @@ export default function WhoWeWorkWithPage() {
             <div className="mt-12 md:mt-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center bg-secondary text-on-secondary px-10 py-5 font-bold tracking-widest text-xs uppercase hover:opacity-90 transition-all"
+                className="inline-flex items-center btn-primary px-10 py-5 font-bold tracking-widest text-xs uppercase"
               >
                 Apply for an Audit
               </Link>

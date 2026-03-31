@@ -94,7 +94,7 @@ export default function HowWeWorkPage() {
             </FadeIn>
             <TextReveal
               as={"h1" as unknown as React.ElementType}
-              className="text-6xl font-bold tracking-tighter text-primary leading-tight mb-8"
+              className="text-6xl font-bold font-display tracking-tighter text-primary leading-tight mb-8"
               delay={0.1}
             >
               <span className="reveal-line block">
@@ -146,7 +146,7 @@ export default function HowWeWorkPage() {
             {phases.map((phase, i) => (
               <div
                 key={phase.num}
-                className={`bg-primary-container p-12 group hover:bg-zinc-900 transition-all duration-500${
+                className={`bg-primary-container p-12 group card-lift hover:bg-zinc-900 transition-all duration-500${
                   i < phases.length - 1
                     ? " border-r border-zinc-800"
                     : ""
@@ -160,7 +160,7 @@ export default function HowWeWorkPage() {
                     {phase.icon}
                   </span>
                 </div>
-                <h3 className="text-3xl font-bold mb-6 tracking-tight">
+                <h3 className="text-3xl font-bold font-display mb-6 tracking-tight">
                   {phase.title}
                 </h3>
                 <p className="text-on-primary-container text-lg leading-relaxed mb-8">
@@ -197,7 +197,7 @@ export default function HowWeWorkPage() {
               </span>
             </div>
             <div className="relative z-10 max-w-3xl">
-              <h2 className="text-4xl font-bold tracking-tight text-primary mb-12 leading-snug">
+              <h2 className="text-4xl font-bold font-display tracking-tight text-primary mb-12 leading-snug">
                 &ldquo;Financial operational excellence isn&rsquo;t a one-time
                 event; it&rsquo;s a structural discipline that allows
                 high-growth entities to scale without losing control.&rdquo;
@@ -221,7 +221,7 @@ export default function HowWeWorkPage() {
           <div className="flex flex-col md:flex-row gap-16 items-center">
             <div className="w-full md:w-1/2">
               <FadeIn>
-                <h2 className="text-4xl font-bold tracking-tighter mb-8">
+                <h2 className="text-4xl font-bold font-display tracking-tighter mb-8">
                   Results-Focused Engineering
                 </h2>
               </FadeIn>
@@ -265,7 +265,7 @@ export default function HowWeWorkPage() {
       {/* ---------------------------------------------------------- */}
       <section className="max-w-7xl mx-auto px-8 py-32 text-center">
         <FadeIn>
-          <h2 className="text-5xl font-black tracking-tighter mb-8">
+          <h2 className="text-5xl font-black font-display tracking-tighter mb-8">
             Ready to stabilize your growth?
           </h2>
         </FadeIn>
@@ -279,11 +279,11 @@ export default function HowWeWorkPage() {
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-secondary text-on-secondary px-12 py-5 font-bold tracking-tight text-lg shadow-xl hover:opacity-90 active:scale-95 transition-all"
+              className="btn-primary px-12 py-5 font-bold tracking-tight text-lg"
             >
               Book Operational Audit
             </Link>
-            <button className="bg-surface-container-high text-primary px-12 py-5 font-bold tracking-tight text-lg hover:bg-surface-container-highest transition-all">
+            <button className="btn-accent px-12 py-5 font-bold tracking-tight text-lg">
               Download Methodology PDF
             </button>
           </div>

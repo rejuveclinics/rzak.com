@@ -46,7 +46,7 @@ export default function ContactPage() {
             </span>
           </FadeIn>
 
-          <TextReveal as="h1" className="text-[3.5rem] font-bold tracking-[-0.02em] leading-[1.1] text-primary mb-8">
+          <TextReveal as="h1" className="text-[3.5rem] font-bold font-display tracking-[-0.02em] leading-[1.1] text-primary mb-8">
             Discreet Consultation
           </TextReveal>
 
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   Primary Liaison
                 </p>
                 <a
-                  className="text-2xl font-semibold text-primary hover:text-secondary transition-colors underline decoration-outline-variant underline-offset-8 decoration-1 hover:decoration-secondary"
+                  className="text-2xl font-semibold text-primary hover:text-secondary transition-colors link-underline"
                   href="mailto:inquiries@rzak.com"
                 >
                   inquiries@rzak.com
@@ -101,7 +101,7 @@ export default function ContactPage() {
         {/* Right column — form */}
         <div className="col-span-12 md:col-span-5 flex flex-col justify-center">
           <FadeIn delay={0.3} direction="right">
-            <div className="bg-surface-container-lowest p-10 shadow-[0_20px_40px_rgba(28,28,25,0.06)] rounded-lg">
+            <div className="bg-surface-container-lowest p-10 shadow-ambient-lg rounded-lg">
               <form className="space-y-8">
                 <div className="relative">
                   <label
@@ -149,7 +149,7 @@ export default function ContactPage() {
                 </div>
 
                 <button
-                  className="w-full bg-secondary text-on-secondary py-5 font-bold tracking-tight text-lg rounded-lg hover:opacity-90 active:scale-[0.98] transition-all flex justify-center items-center gap-2"
+                  className="w-full btn-primary py-5 font-bold tracking-tight text-lg rounded-lg flex justify-center items-center gap-2"
                   type="submit"
                 >
                   Initialize Protocol
@@ -178,7 +178,7 @@ export default function ContactPage() {
         <div className="absolute bottom-12 left-12">
           <FadeIn>
             <div className="bg-primary-container text-on-primary p-6 inline-block">
-              <p className="font-headline font-bold text-2xl tracking-tight">
+              <p className="font-display font-bold text-2xl tracking-tight">
                 Built for Sovereignty.
               </p>
             </div>

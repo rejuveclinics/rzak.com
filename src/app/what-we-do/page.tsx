@@ -48,7 +48,7 @@ export default function WhatWeDoPage() {
             </FadeIn>
             <TextReveal
               as={"h1" as unknown as React.ElementType}
-              className="text-5xl md:text-7xl font-bold text-primary tracking-tight leading-[1.1] mb-8"
+              className="text-5xl md:text-7xl font-bold font-display text-primary tracking-tight leading-[1.1] mb-8"
               delay={0.1}
             >
               <span className="reveal-line block">
@@ -97,12 +97,12 @@ export default function WhatWeDoPage() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             {/* Oversight — 7 col */}
-            <FadeIn className="md:col-span-7 bg-surface p-12 rounded-xl flex flex-col justify-between group transition-all duration-500 hover:bg-white hover:shadow-2xl hover:shadow-black/5">
+            <FadeIn className="md:col-span-7 bg-surface p-12 rounded-xl flex flex-col justify-between group card-lift transition-all duration-500 hover:bg-white hover:shadow-2xl hover:shadow-black/5">
               <div>
                 <span className="material-symbols-outlined text-4xl text-secondary mb-8 block">
                   visibility
                 </span>
-                <h3 className="text-3xl font-bold mb-6 text-primary tracking-tight">
+                <h3 className="text-3xl font-bold font-display mb-6 text-primary tracking-tight">
                   Oversight
                 </h3>
                 <p className="text-lg text-on-surface-variant leading-relaxed max-w-xl">
@@ -111,7 +111,7 @@ export default function WhatWeDoPage() {
                   one bad decision. It comes from things no one is checking.
                 </p>
               </div>
-              <div className="mt-12 flex items-center gap-2 text-secondary font-bold">
+              <div className="mt-12 flex items-center gap-2 text-secondary font-bold link-underline">
                 <span>Audit &amp; Surveillance</span>
                 <span className="material-symbols-outlined">
                   arrow_forward
@@ -121,13 +121,13 @@ export default function WhatWeDoPage() {
 
             {/* Control — 5 col dark */}
             <FadeIn
-              className="md:col-span-5 bg-primary-container p-12 rounded-xl text-white"
+              className="md:col-span-5 bg-primary-container p-12 rounded-xl text-white card-lift"
               delay={0.1}
             >
               <span className="material-symbols-outlined text-4xl text-secondary-container mb-8 block">
                 tune
               </span>
-              <h3 className="text-3xl font-bold mb-6 tracking-tight">
+              <h3 className="text-3xl font-bold font-display mb-6 tracking-tight">
                 Control
               </h3>
               <p className="text-lg text-on-primary-container leading-relaxed">
@@ -139,7 +139,7 @@ export default function WhatWeDoPage() {
 
             {/* Execution — 4 col */}
             <FadeIn
-              className="md:col-span-4 bg-surface p-10 rounded-xl flex flex-col gap-6"
+              className="md:col-span-4 bg-surface p-10 rounded-xl flex flex-col gap-6 card-lift"
               delay={0.15}
             >
               <div className="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center">
@@ -147,7 +147,7 @@ export default function WhatWeDoPage() {
                   terminal
                 </span>
               </div>
-              <h3 className="text-2xl font-bold text-primary tracking-tight">
+              <h3 className="text-2xl font-bold font-display text-primary tracking-tight">
                 Execution
               </h3>
               <p className="text-on-surface-variant leading-relaxed">
@@ -159,7 +159,7 @@ export default function WhatWeDoPage() {
 
             {/* Protection — 4 col */}
             <FadeIn
-              className="md:col-span-4 bg-surface p-10 rounded-xl flex flex-col gap-6"
+              className="md:col-span-4 bg-surface p-10 rounded-xl flex flex-col gap-6 card-lift"
               delay={0.2}
             >
               <div className="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center">
@@ -167,7 +167,7 @@ export default function WhatWeDoPage() {
                   gavel
                 </span>
               </div>
-              <h3 className="text-2xl font-bold text-primary tracking-tight">
+              <h3 className="text-2xl font-bold font-display text-primary tracking-tight">
                 Protection
               </h3>
               <p className="text-on-surface-variant leading-relaxed">
@@ -199,7 +199,7 @@ export default function WhatWeDoPage() {
                   <span className="text-label-md text-secondary tracking-[0.2em] mb-4 block">
                     Strategic Upside
                   </span>
-                  <h3 className="text-4xl font-bold mb-8 text-primary tracking-tight">
+                  <h3 className="text-4xl font-bold font-display mb-8 text-primary tracking-tight">
                     Growth &amp; Optimization
                   </h3>
                   <p className="text-xl text-on-surface-variant leading-relaxed">
@@ -232,7 +232,7 @@ export default function WhatWeDoPage() {
         <FadeIn>
           <div className="bg-primary text-white p-16 rounded-xl flex flex-col md:flex-row justify-between items-center gap-12 relative overflow-hidden">
             <div className="relative z-10 max-w-2xl">
-              <h2 className="text-4xl font-bold mb-6 leading-tight">
+              <h2 className="text-4xl font-bold font-display mb-6 leading-tight">
                 Ready to institutionalize your personal operations?
               </h2>
               <p className="text-on-primary-container text-lg">
@@ -242,7 +242,7 @@ export default function WhatWeDoPage() {
             </div>
             <Link
               href="/contact"
-              className="relative z-10 bg-secondary-container text-on-secondary-container px-10 py-5 rounded-lg font-bold text-lg hover:brightness-105 active:scale-95 transition-all"
+              className="relative z-10 btn-accent px-10 py-5 rounded-lg font-bold text-lg"
             >
               Inquire About Onboarding
             </Link>
