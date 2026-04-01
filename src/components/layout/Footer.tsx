@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full bg-primary text-on-primary">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 w-full px-8 py-20 max-w-7xl mx-auto text-sm">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 w-full px-4 sm:px-8 py-12 md:py-20 max-w-7xl mx-auto text-sm">
         <div>
           <span className="text-2xl font-black block mb-6 tracking-tighter">RZAK</span>
           <p className="text-on-primary-container leading-relaxed max-w-xs">
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-8 py-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 py-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-xs text-on-primary-container">
           &copy; 2024 RZAK Financial Operations. All rights reserved. Discretion assured.
         </p>

@@ -100,7 +100,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center pt-20 overflow-hidden -mt-16">
         {/* Background */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60 sm:to-transparent z-10" />
           <Image
             src={HERO_BG}
             alt="Cinematic wide shot of a modern brutalist concrete building with sharp angles and dramatic shadows at twilight"
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-20 max-w-7xl mx-auto px-8 grid grid-cols-12 gap-8 items-center">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-12 gap-8 items-center">
           <div className="col-span-12 md:col-span-7 lg:col-span-8">
             <FadeIn delay={0.1}>
               <span className="text-secondary-fixed text-label-md mb-6 block">
@@ -168,8 +168,8 @@ export default function Home() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 2 : PROBLEM                                         */}
       {/* ---------------------------------------------------------- */}
-      <section className="py-32 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-8 grid grid-cols-12 gap-12 items-start">
+      <section className="py-16 md:py-32 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-12 gap-8 md:gap-12 items-start">
           <div className="col-span-12 md:col-span-5">
             <FadeIn>
               <h2 className="text-headline-lg text-primary sticky top-32 font-display">
@@ -180,7 +180,7 @@ export default function Home() {
 
           <div className="col-span-12 md:col-span-7">
             <FadeIn>
-              <p className="text-2xl leading-relaxed text-on-surface-variant font-light">
+              <p className="text-lg md:text-2xl leading-relaxed text-on-surface-variant font-light">
                 Most people assume their finances are being handled correctly. In
                 reality, things slip through constantly:{" "}
                 <span className="text-primary font-medium">
@@ -192,7 +192,7 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <p className="text-2xl leading-relaxed text-on-surface-variant mt-8 font-light">
+              <p className="text-lg md:text-2xl leading-relaxed text-on-surface-variant mt-8 font-light">
                 Nothing breaks at once. It builds quietly. Then it becomes
                 expensive. And while that&rsquo;s happening, opportunities are
                 missed. We fix the leaks and the missed upside.
@@ -200,7 +200,7 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <div className="mt-16 h-[400px] relative overflow-hidden group">
+              <div className="mt-10 md:mt-16 h-56 sm:h-72 md:h-[400px] relative overflow-hidden group">
                 <Image
                   src={PROBLEM_IMG}
                   alt="Abstract architectural shot of interlocking glass and steel panels with high contrast lighting and deep shadows"
@@ -218,10 +218,10 @@ export default function Home() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 3 : CORE CAPABILITIES                                */}
       {/* ---------------------------------------------------------- */}
-      <section className="py-32 bg-background">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-32 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <FadeIn>
-            <div className="flex justify-between items-end mb-20">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end mb-12 md:mb-20 gap-4">
               <div className="max-w-2xl">
                 <span className="text-label-md text-secondary block mb-4">
                   Core Capabilities
@@ -243,7 +243,7 @@ export default function Home() {
           <FadeIn stagger={0.1}>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
               {/* Oversight — large card */}
-              <div className="md:col-span-7 bg-surface-container-low p-12 rounded-xl card-lift group">
+              <div className="md:col-span-7 bg-surface-container-low p-6 md:p-12 rounded-xl card-lift group">
                 <span className="material-symbols-outlined text-secondary text-3xl mb-8 block">visibility</span>
                 <h3 className="text-2xl font-bold tracking-tight mb-4 font-display">Oversight</h3>
                 <p className="text-on-surface-variant leading-relaxed max-w-xl">
@@ -251,7 +251,7 @@ export default function Home() {
                 </p>
               </div>
               {/* Control — dark card */}
-              <div className="md:col-span-5 bg-primary-container p-12 rounded-xl text-on-primary card-lift">
+              <div className="md:col-span-5 bg-primary-container p-6 md:p-12 rounded-xl text-on-primary card-lift">
                 <span className="material-symbols-outlined text-secondary-container text-3xl mb-8 block">settings_input_component</span>
                 <h3 className="text-2xl font-bold tracking-tight mb-4 font-display">Control</h3>
                 <p className="text-on-primary-container leading-relaxed">
@@ -259,7 +259,7 @@ export default function Home() {
                 </p>
               </div>
               {/* Execution */}
-              <div className="md:col-span-4 bg-surface-container p-10 rounded-xl card-lift">
+              <div className="md:col-span-4 bg-surface-container p-6 md:p-10 rounded-xl card-lift">
                 <div className="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6">
                   <span className="material-symbols-outlined text-primary">bolt</span>
                 </div>
@@ -269,7 +269,7 @@ export default function Home() {
                 </p>
               </div>
               {/* Protection */}
-              <div className="md:col-span-4 bg-surface-container p-10 rounded-xl card-lift">
+              <div className="md:col-span-4 bg-surface-container p-6 md:p-10 rounded-xl card-lift">
                 <div className="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6">
                   <span className="material-symbols-outlined text-primary">shield</span>
                 </div>
@@ -279,7 +279,7 @@ export default function Home() {
                 </p>
               </div>
               {/* Growth — accent card */}
-              <div className="md:col-span-4 bg-secondary p-10 rounded-xl text-on-secondary card-lift relative overflow-hidden">
+              <div className="md:col-span-4 bg-secondary p-6 md:p-10 rounded-xl text-on-secondary card-lift relative overflow-hidden">
                 <div className="relative z-10">
                   <span className="material-symbols-outlined text-3xl mb-8 block opacity-90">trending_up</span>
                   <h3 className="text-xl font-bold tracking-tight mb-3 font-display">Growth</h3>
@@ -296,8 +296,8 @@ export default function Home() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 4 : HOW WE WORK PREVIEW                             */}
       {/* ---------------------------------------------------------- */}
-      <section className="py-32 bg-primary-container text-on-primary">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-32 bg-primary-container text-on-primary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-12 gap-12">
             <div className="col-span-12 lg:col-span-4">
               <FadeIn>
@@ -327,7 +327,7 @@ export default function Home() {
               {phases.map((phase) => (
                 <div
                   key={phase.num}
-                  className="bg-primary p-10 rounded-xl relative overflow-hidden"
+                  className="bg-primary p-6 md:p-10 rounded-xl relative overflow-hidden"
                 >
                   <span className="text-6xl font-black text-white/5 absolute -top-4 -right-4">
                     {phase.num}
@@ -348,10 +348,10 @@ export default function Home() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 5 : INSIGHTS PREVIEW                                 */}
       {/* ---------------------------------------------------------- */}
-      <section className="py-32 bg-surface-container-high/30">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-32 bg-surface-container-high/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <FadeIn>
-            <div className="flex justify-between items-center mb-16">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-10 md:mb-16 gap-3">
               <h2 className="text-headline-lg text-primary font-display">
                 Critical Insights
               </h2>
@@ -368,7 +368,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
               {/* Featured insight */}
               <div className="md:col-span-7 bg-surface-container-low rounded-xl group cursor-pointer card-lift">
-                <div className="h-72 overflow-hidden relative">
+                <div className="h-48 md:h-72 overflow-hidden relative">
                   <Image
                     src={insights[0].img}
                     alt={insights[0].alt}
@@ -377,7 +377,7 @@ export default function Home() {
                     className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   />
                 </div>
-                <div className="p-10">
+                <div className="p-6 md:p-10">
                   <span className="text-label-md text-on-surface-variant/50 block mb-3">Insight 01</span>
                   <h3 className="text-2xl font-bold tracking-tight group-hover:text-secondary transition-colors font-display mb-3">
                     {insights[0].title}
@@ -386,7 +386,7 @@ export default function Home() {
                 </div>
               </div>
               {/* Dark insight */}
-              <div className="md:col-span-5 bg-primary text-on-primary rounded-xl group cursor-pointer card-lift flex flex-col justify-between p-10">
+              <div className="md:col-span-5 bg-primary text-on-primary rounded-xl group cursor-pointer card-lift flex flex-col justify-between p-6 md:p-10">
                 <div>
                   <span className="text-label-md text-on-primary-container block mb-8">Insight 02</span>
                   <h3 className="text-2xl font-bold tracking-tight group-hover:text-secondary-fixed transition-colors font-display mb-4">
@@ -399,7 +399,7 @@ export default function Home() {
                 </div>
               </div>
               {/* Third insight — accent border */}
-              <div className="md:col-span-12 bg-surface-container-high border-l-4 border-secondary rounded-xl p-10 group cursor-pointer card-lift flex items-center gap-12">
+              <div className="md:col-span-12 bg-surface-container-high border-l-4 border-secondary rounded-xl p-6 md:p-10 group cursor-pointer card-lift flex items-center gap-6 md:gap-12">
                 <div className="flex-1">
                   <span className="text-label-md text-on-surface-variant/50 block mb-3">Insight 03</span>
                   <h3 className="text-xl font-bold tracking-tight group-hover:text-secondary transition-colors font-display mb-2">
@@ -417,8 +417,8 @@ export default function Home() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 6 : CONTACT CTA                                      */}
       {/* ---------------------------------------------------------- */}
-      <section className="py-32 bg-primary rounded-xl">
-        <div className="max-w-7xl mx-auto px-8 flex flex-col items-center text-center">
+      <section className="py-16 md:py-32 bg-primary mx-4 sm:mx-6 md:mx-0 rounded-xl">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 flex flex-col items-center text-center">
           <FadeIn>
             <h2 className="text-display-lg text-on-primary mb-8 max-w-4xl">
               Ready to secure your financial infrastructure?

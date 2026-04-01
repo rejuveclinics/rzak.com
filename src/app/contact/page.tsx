@@ -37,7 +37,7 @@ export default function ContactPage() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 1 : HERO SPLIT                                      */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-[1440px] mx-auto px-8 md:px-12 py-24 grid grid-cols-12 gap-12">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 py-12 md:py-24 grid grid-cols-12 gap-8 md:gap-12">
         {/* Left column */}
         <div className="col-span-12 md:col-span-7">
           <FadeIn>
@@ -46,7 +46,7 @@ export default function ContactPage() {
             </span>
           </FadeIn>
 
-          <TextReveal as="h1" className="text-[3.5rem] font-bold font-display tracking-[-0.02em] leading-[1.1] text-primary mb-8">
+          <TextReveal as="h1" className="text-[2.25rem] sm:text-[3.5rem] font-bold font-display tracking-[-0.02em] leading-[1.1] text-primary mb-8">
             Discreet Consultation
           </TextReveal>
 
@@ -101,7 +101,7 @@ export default function ContactPage() {
         {/* Right column — form */}
         <div className="col-span-12 md:col-span-5 flex flex-col justify-center">
           <FadeIn delay={0.3} direction="right">
-            <div className="bg-surface-container-lowest p-10 shadow-ambient-lg rounded-xl">
+            <div className="bg-surface-container-lowest p-6 md:p-10 shadow-ambient-lg rounded-xl">
               <form className="space-y-8">
                 <div className="relative">
                   <label
@@ -166,7 +166,7 @@ export default function ContactPage() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 2 : FULL-BLEED IMAGE                                */}
       {/* ---------------------------------------------------------- */}
-      <section className="w-full h-[500px] relative overflow-hidden">
+      <section className="w-full h-52 sm:h-72 md:h-[500px] relative overflow-hidden">
         <Image
           src={ARCHITECTURE_IMG}
           alt="Monochrome architectural detail of a modern steel and glass skyscraper with sharp lines and high contrast shadows"
@@ -175,10 +175,10 @@ export default function ContactPage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-40" />
-        <div className="absolute bottom-12 left-12">
+        <div className="absolute bottom-4 left-4 md:bottom-12 md:left-12">
           <FadeIn>
-            <div className="bg-primary-container text-on-primary p-6 inline-block">
-              <p className="font-display font-bold text-2xl tracking-tight">
+            <div className="bg-primary-container text-on-primary p-4 md:p-6 inline-block">
+              <p className="font-display font-bold text-lg md:text-2xl tracking-tight">
                 Built for Sovereignty.
               </p>
             </div>
@@ -191,7 +191,7 @@ export default function ContactPage() {
       {/* ---------------------------------------------------------- */}
       <section className="bg-primary-container py-12">
         <FadeIn
-          className="max-w-[1440px] mx-auto px-8 md:px-12 flex flex-wrap justify-between items-center gap-8"
+          className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 flex flex-wrap justify-between items-center gap-6"
           stagger={0.1}
         >
           {offices.map((office) => (

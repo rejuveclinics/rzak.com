@@ -38,7 +38,7 @@ export default function WhatWeDoPage() {
       {/* ---------------------------------------------------------- */}
       {/* HERO SECTION                                                */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-7xl mx-auto px-8 mb-24 pt-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-8 mb-12 md:mb-24 pt-8 md:pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-8">
             <FadeIn>
@@ -67,7 +67,7 @@ export default function WhatWeDoPage() {
         </div>
 
         <FadeIn delay={0.3}>
-          <div className="mt-16 relative overflow-hidden rounded-xl aspect-[21/9]">
+          <div className="mt-10 md:mt-16 relative overflow-hidden rounded-xl aspect-[4/3] sm:aspect-[16/9] md:aspect-[21/9]">
             <Image
               src={HERO_IMG}
               alt="Monolithic modern architecture with sharp glass and steel angles against a clear sky, symbolizing structure and precision oversight"
@@ -77,8 +77,8 @@ export default function WhatWeDoPage() {
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
-            <div className="absolute bottom-12 left-12 right-12 flex flex-col md:flex-row justify-between items-end gap-6">
-              <p className="text-white text-2xl font-light max-w-2xl">
+            <div className="absolute bottom-4 left-4 right-4 md:bottom-12 md:left-12 md:right-12 flex flex-col md:flex-row justify-between items-end gap-6">
+              <p className="text-white text-base md:text-2xl font-light max-w-2xl">
                 At the same time, most people are leaving money on the table
                 because no one is looking for better ways to operate.{" "}
                 <span className="font-bold text-secondary-container">
@@ -93,11 +93,11 @@ export default function WhatWeDoPage() {
       {/* ---------------------------------------------------------- */}
       {/* SERVICES BENTO GRID                                         */}
       {/* ---------------------------------------------------------- */}
-      <section className="bg-surface-container-low py-24">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="bg-surface-container-low py-12 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             {/* Oversight — 7 col */}
-            <FadeIn className="md:col-span-7 bg-surface p-12 rounded-xl flex flex-col justify-between group card-lift transition-all duration-500 hover:bg-white hover:shadow-2xl hover:shadow-black/5">
+            <FadeIn className="md:col-span-7 bg-surface p-6 md:p-12 rounded-xl flex flex-col justify-between group card-lift transition-all duration-500 hover:bg-white hover:shadow-2xl hover:shadow-black/5">
               <div>
                 <span className="material-symbols-outlined text-4xl text-secondary mb-8 block">
                   visibility
@@ -121,7 +121,7 @@ export default function WhatWeDoPage() {
 
             {/* Control — 5 col dark */}
             <FadeIn
-              className="md:col-span-5 bg-primary-container p-12 rounded-xl text-white card-lift"
+              className="md:col-span-5 bg-primary-container p-6 md:p-12 rounded-xl text-white card-lift"
               delay={0.1}
             >
               <span className="material-symbols-outlined text-4xl text-secondary-container mb-8 block">
@@ -139,7 +139,7 @@ export default function WhatWeDoPage() {
 
             {/* Execution — 4 col */}
             <FadeIn
-              className="md:col-span-4 bg-surface p-10 rounded-xl flex flex-col gap-6 card-lift"
+              className="md:col-span-4 bg-surface p-6 md:p-10 rounded-xl flex flex-col gap-6 card-lift"
               delay={0.15}
             >
               <div className="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center">
@@ -159,7 +159,7 @@ export default function WhatWeDoPage() {
 
             {/* Protection — 4 col */}
             <FadeIn
-              className="md:col-span-4 bg-surface p-10 rounded-xl flex flex-col gap-6 card-lift"
+              className="md:col-span-4 bg-surface p-6 md:p-10 rounded-xl flex flex-col gap-6 card-lift"
               delay={0.2}
             >
               <div className="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center">
@@ -191,7 +191,7 @@ export default function WhatWeDoPage() {
 
             {/* Growth — 12 col signature */}
             <FadeIn
-              className="md:col-span-12 mt-6 bg-surface-container-highest border-l-[8px] border-secondary p-16 rounded-xl relative overflow-hidden"
+              className="md:col-span-12 mt-6 bg-surface-container-highest border-l-[8px] border-secondary p-6 md:p-16 rounded-xl relative overflow-hidden"
               delay={0.1}
             >
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
@@ -228,9 +228,9 @@ export default function WhatWeDoPage() {
       {/* ---------------------------------------------------------- */}
       {/* CTA SECTION                                                 */}
       {/* ---------------------------------------------------------- */}
-      <section className="py-24 max-w-7xl mx-auto px-8">
+      <section className="py-12 md:py-24 max-w-7xl mx-auto px-4 sm:px-8">
         <FadeIn>
-          <div className="bg-primary text-white p-16 rounded-xl flex flex-col md:flex-row justify-between items-center gap-12 relative overflow-hidden">
+          <div className="bg-primary text-white p-8 md:p-16 rounded-xl flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 relative overflow-hidden">
             <div className="relative z-10 max-w-2xl">
               <h2 className="text-4xl font-bold font-display mb-6 leading-tight">
                 Ready to institutionalize your personal operations?
