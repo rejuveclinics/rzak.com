@@ -37,8 +37,8 @@ export default function InsightsPage() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 1 : HERO                                            */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-[1440px] mx-auto px-12 pt-24 pb-0">
-        <div className="grid grid-cols-12 gap-8 mb-24 items-end">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 pt-12 md:pt-24 pb-0">
+        <div className="grid grid-cols-12 gap-8 mb-12 md:mb-24 items-end">
           <div className="col-span-12 md:col-span-8">
             <FadeIn>
               <span className="text-label-md text-secondary mb-4 block">
@@ -82,12 +82,12 @@ export default function InsightsPage() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 2 : BENTO GRID                                      */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-[1440px] mx-auto px-12 pb-32">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 pb-16 md:pb-32">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Insight 1: Large Feature (7-col) */}
           <FadeIn className="md:col-span-7">
             <article className="bg-surface-container-low rounded-xl group cursor-pointer h-full card-lift">
-              <div className="p-12 h-full flex flex-col justify-between">
+              <div className="p-6 md:p-12 h-full flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-start mb-8">
                     <span className="text-label-md opacity-60">Insight 01</span>
@@ -119,7 +119,7 @@ export default function InsightsPage() {
           {/* Insight 2: Dark card (5-col) */}
           <FadeIn className="md:col-span-5" delay={0.1}>
             <article className="bg-primary text-on-primary rounded-xl group cursor-pointer h-full card-lift">
-              <div className="p-12 h-full flex flex-col justify-between">
+              <div className="p-6 md:p-12 h-full flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-start mb-12">
                     <span className="text-label-md text-on-primary-container">
@@ -152,7 +152,7 @@ export default function InsightsPage() {
           {/* Insight 3: 4-col with green left border */}
           <FadeIn className="md:col-span-4" delay={0.15}>
             <article className="bg-surface-container-high rounded-xl group cursor-pointer border-l-4 border-secondary h-full card-lift">
-              <div className="p-10">
+              <div className="p-6 md:p-10">
                 <div className="mb-6 text-label-md opacity-40">Insight 03</div>
                 <h2 className="text-xl font-bold font-display tracking-[-0.02em] mb-4">
                   The Cost of Not Reviewing Contracts
@@ -171,7 +171,7 @@ export default function InsightsPage() {
           {/* Insight 4: 4-col with progress bar */}
           <FadeIn className="md:col-span-4" delay={0.2}>
             <article className="bg-surface-container-low rounded-xl group cursor-pointer h-full card-lift">
-              <div className="p-10 h-full flex flex-col">
+              <div className="p-6 md:p-10 h-full flex flex-col">
                 <div className="mb-6 text-label-md opacity-40">Insight 04</div>
                 <h2 className="text-xl font-bold font-display tracking-[-0.02em] mb-4">
                   Spending Isn&rsquo;t the Problem
@@ -195,7 +195,7 @@ export default function InsightsPage() {
                   account_tree
                 </span>
               </div>
-              <div className="p-10 relative z-10">
+              <div className="p-6 md:p-10 relative z-10">
                 <div className="mb-6 text-label-md opacity-40">Insight 05</div>
                 <h2 className="text-xl font-bold font-display tracking-[-0.02em] mb-4">
                   Why Financial Systems Break at Scale
@@ -216,9 +216,9 @@ export default function InsightsPage() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 3 : NEWSLETTER / ANALYSIS FORM                      */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-[1440px] mx-auto px-12">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12">
         <FadeIn>
-          <div className="p-16 bg-primary-container text-on-primary rounded-xl">
+          <div className="p-6 md:p-16 bg-primary-container text-on-primary rounded-xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-bold font-display tracking-[-0.02em] mb-4">
@@ -247,7 +247,7 @@ export default function InsightsPage() {
       {/* ---------------------------------------------------------- */}
       {/* SECTION 4 : DATA TICKER STRIP                                */}
       {/* ---------------------------------------------------------- */}
-      <div className="mt-32 bg-primary-container text-white py-4 border-y border-white/5">
+      <div className="mt-16 md:mt-32 bg-primary-container text-white py-4 border-y border-white/5">
         <Marquee>
           <div className="flex">
             {tickerItems.map((item) => (

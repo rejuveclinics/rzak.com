@@ -84,7 +84,7 @@ export default function HowWeWorkPage() {
       {/* ---------------------------------------------------------- */}
       {/* HERO SECTION                                                */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-7xl mx-auto px-8 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-8 py-10 md:py-20">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 md:col-span-7">
             <FadeIn>
@@ -94,7 +94,7 @@ export default function HowWeWorkPage() {
             </FadeIn>
             <TextReveal
               as={"h1" as unknown as React.ElementType}
-              className="text-6xl font-bold font-display tracking-tighter text-primary leading-tight mb-8"
+              className="text-4xl md:text-6xl font-bold font-display tracking-tighter text-primary leading-tight mb-8"
               delay={0.1}
             >
               <span className="reveal-line block">
@@ -137,8 +137,8 @@ export default function HowWeWorkPage() {
       {/* ---------------------------------------------------------- */}
       {/* PROCESS STRIP (BENTO STYLE)                                 */}
       {/* ---------------------------------------------------------- */}
-      <section className="bg-primary-container py-24 text-on-primary">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="bg-primary-container py-12 md:py-24 text-on-primary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <FadeIn
             className="grid grid-cols-1 md:grid-cols-3 gap-1"
             stagger={0.12}
@@ -146,13 +146,13 @@ export default function HowWeWorkPage() {
             {phases.map((phase, i) => (
               <div
                 key={phase.num}
-                className={`bg-primary-container p-12 rounded-xl group card-lift hover:bg-zinc-900 transition-all duration-500${
+                className={`bg-primary-container p-6 md:p-12 rounded-xl group card-lift hover:bg-zinc-900 transition-all duration-500${
                   i < phases.length - 1
                     ? " border-r border-zinc-800"
                     : ""
                 }`}
               >
-                <div className="flex items-center justify-between mb-16">
+                <div className="flex items-center justify-between mb-8 md:mb-16">
                   <span className="text-5xl font-black text-zinc-800 group-hover:text-secondary transition-colors">
                     {phase.num}
                   </span>
@@ -188,16 +188,16 @@ export default function HowWeWorkPage() {
       {/* ---------------------------------------------------------- */}
       {/* EDITORIAL QUOTE SECTION                                     */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-7xl mx-auto px-8 py-32">
+      <section className="max-w-7xl mx-auto px-4 sm:px-8 py-16 md:py-32">
         <FadeIn>
-          <div className="bg-surface-container-low p-16 rounded-xl relative overflow-hidden">
+          <div className="bg-surface-container-low p-6 md:p-16 rounded-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 p-12 opacity-10">
               <span className="material-symbols-outlined text-[120px]">
                 format_quote
               </span>
             </div>
             <div className="relative z-10 max-w-3xl">
-              <h2 className="text-4xl font-bold font-display tracking-tight text-primary mb-12 leading-snug">
+              <h2 className="text-2xl md:text-4xl font-bold font-display tracking-tight text-primary mb-8 md:mb-12 leading-snug">
                 &ldquo;Financial operational excellence isn&rsquo;t a one-time
                 event; it&rsquo;s a structural discipline that allows
                 high-growth entities to scale without losing control.&rdquo;
@@ -216,8 +216,8 @@ export default function HowWeWorkPage() {
       {/* ---------------------------------------------------------- */}
       {/* RESULTS ENGINEERING SPLIT LAYOUT                            */}
       {/* ---------------------------------------------------------- */}
-      <section className="py-24 bg-surface">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-12 md:py-24 bg-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="flex flex-col md:flex-row gap-16 items-center">
             <div className="w-full md:w-1/2">
               <FadeIn>
@@ -243,7 +243,7 @@ export default function HowWeWorkPage() {
             </div>
             <div className="w-full md:w-1/2">
               <FadeIn delay={0.2} direction="right">
-                <div className="h-[500px] bg-zinc-900 p-1">
+                <div className="h-64 md:h-[500px] bg-zinc-900 p-1">
                   <div className="relative w-full h-full">
                     <Image
                       src={RESULTS_IMG}
@@ -263,9 +263,9 @@ export default function HowWeWorkPage() {
       {/* ---------------------------------------------------------- */}
       {/* FINAL CTA                                                   */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-7xl mx-auto px-8 py-32 text-center">
+      <section className="max-w-7xl mx-auto px-4 sm:px-8 py-16 md:py-32 text-center">
         <FadeIn>
-          <h2 className="text-5xl font-black font-display tracking-tighter mb-8">
+          <h2 className="text-3xl md:text-5xl font-black font-display tracking-tighter mb-8">
             Ready to stabilize your growth?
           </h2>
         </FadeIn>

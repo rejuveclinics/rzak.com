@@ -32,7 +32,7 @@ export default function WhoWeWorkWithPage() {
       {/* ---------------------------------------------------------- */}
       {/* HERO SECTION                                                */}
       {/* ---------------------------------------------------------- */}
-      <header className="max-w-7xl mx-auto px-8 pt-20 pb-16">
+      <header className="max-w-7xl mx-auto px-4 sm:px-8 pt-10 md:pt-20 pb-8 md:pb-16">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 md:col-span-8 lg:col-span-7">
             <FadeIn>
@@ -61,10 +61,10 @@ export default function WhoWeWorkWithPage() {
       {/* ---------------------------------------------------------- */}
       {/* CLIENT BENTO GRID                                           */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-7xl mx-auto px-8 pb-24">
+      <section className="max-w-7xl mx-auto px-4 sm:px-8 pb-12 md:pb-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Category 1: Founders — 7 col */}
-          <FadeIn className="md:col-span-7 bg-surface-container-low p-12 rounded-xl flex flex-col justify-between group card-lift overflow-hidden relative">
+          <FadeIn className="md:col-span-7 bg-surface-container-low p-6 md:p-12 rounded-xl flex flex-col justify-between group card-lift overflow-hidden relative">
             <div className="relative z-10">
               <span className="material-symbols-outlined text-secondary mb-6 text-3xl">
                 account_balance
@@ -99,7 +99,7 @@ export default function WhoWeWorkWithPage() {
 
           {/* Category 2: Public Figures — 5 col dark */}
           <FadeIn
-            className="md:col-span-5 bg-primary p-12 rounded-xl text-on-primary flex flex-col justify-between card-lift"
+            className="md:col-span-5 bg-primary p-6 md:p-12 rounded-xl text-on-primary flex flex-col justify-between card-lift"
             delay={0.1}
           >
             <div>
@@ -124,7 +124,7 @@ export default function WhoWeWorkWithPage() {
 
           {/* Category 3: Operators — 5 col */}
           <FadeIn
-            className="md:col-span-5 bg-surface-container p-12 rounded-xl flex flex-col justify-between card-lift"
+            className="md:col-span-5 bg-surface-container p-6 md:p-12 rounded-xl flex flex-col justify-between card-lift"
             delay={0.15}
           >
             <div>
@@ -150,7 +150,7 @@ export default function WhoWeWorkWithPage() {
 
           {/* Category 4: High-Income Individuals — 7 col with image */}
           <FadeIn
-            className="md:col-span-7 bg-surface-container-high p-12 rounded-xl flex flex-col md:flex-row gap-8 items-center card-lift"
+            className="md:col-span-7 bg-surface-container-high p-6 md:p-12 rounded-xl flex flex-col md:flex-row gap-8 items-center card-lift"
             delay={0.2}
           >
             <div className="flex-1">
@@ -210,9 +210,9 @@ export default function WhoWeWorkWithPage() {
       {/* ---------------------------------------------------------- */}
       {/* BOTTOM CTA / EDITORIAL SECTION                              */}
       {/* ---------------------------------------------------------- */}
-      <section className="max-w-7xl mx-auto px-8 py-32">
+      <section className="max-w-7xl mx-auto px-4 sm:px-8 py-16 md:py-32">
         <FadeIn>
-          <div className="flex flex-col md:flex-row items-end justify-between border-t border-surface-container-highest pt-12">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between border-t border-surface-container-highest pt-12 gap-8 md:gap-0">
             <div className="max-w-xl">
               <h2 className="text-4xl font-bold font-display text-primary tracking-tighter mb-6 leading-tight">
                 We are the backbone for the modern sovereign.
@@ -222,7 +222,7 @@ export default function WhoWeWorkWithPage() {
                 financial operating system that scales with their ambition.
               </p>
             </div>
-            <div className="mt-12 md:mt-0">
+            <div className="mt-0">
               <Link
                 href="/contact"
                 className="inline-flex items-center btn-primary px-10 py-5 font-bold tracking-widest text-xs uppercase"
